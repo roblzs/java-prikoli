@@ -17,11 +17,11 @@ class Main {
       symbol = in.nextLine().toLowerCase();
     }
 
-    String newText = text.replaceAll(symbol, "");
+    String new_text = text.replaceAll(symbol, "");
 
     System.out.println("There are " + word_amount + " words in this text");
     System.out.println("New text:");
-    System.out.println(newText);
+    System.out.println(new_text);
 
     in.close();
   }
