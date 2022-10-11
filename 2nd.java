@@ -27,7 +27,7 @@ class Second {
     if (arr.size() % 2 == 0) {
       mid_index = arr.size() / 2;
     } else {
-      mid_index = Math.round(arr.size() / 2) + 1;
+      mid_index = Math.round(arr.size() / 2);
     }
 
     int mid_el = arr.get(mid_index);
@@ -61,11 +61,11 @@ class Second {
         if (arr_len > 0) {
           valid = true;
         } else {
-          System.out.print("Invalid array length, please enter again: ");
+          System.out.println("Invalid array length, please enter again: ");
           nStr = in.next();
         }
       } catch (NumberFormatException e) {
-        System.out.print("Invalid array length, please enter again: ");
+        System.out.println("Invalid array length, please enter again: ");
         nStr = in.next();
       }
     }
@@ -79,5 +79,7 @@ class Second {
     }
 
     printArr(arr);
+
+    in.close();
   }
 }
